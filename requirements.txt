@@ -1,0 +1,10 @@
+datasets==2.19.1 #older version of library to avoid compatibility issues
+json
+random
+collections
+tranfrormers
+ollama
+tqdm
+pamdas
+matplotlib
+seaborn
