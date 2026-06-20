@@ -5,6 +5,6 @@ collections
 tranfrormers
 ollama
 tqdm
-pamdas
+pandas
 matplotlib
 seaborn
