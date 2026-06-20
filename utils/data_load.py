@@ -14,7 +14,7 @@ CATEGORIES = {
     "Minimum Commitment": "minimum_commitment",
 }
 
-def main():
+def load_data():
     ds = load_dataset("theatticusproject/cuad-qa", split="train", trust_remote_code=True)
 
     by_label = defaultdict(list)
