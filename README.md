@@ -8,9 +8,12 @@
 
 ## LoRA Hyperparameters
 *Was hast Du variiert, was war der Effekt?*
-- **Rank**
-- **Target Modules**
-- **Learning Rate**
+### Hyperparamether tuning
+- **LoRA Rank** Controls the number of trainable parameters in the LoRA adapter matrices. A higher rank increases model capacity but also memory usage.(r = 8, 16, 32)
+- **LoRA Alpha** Scales the strength of the fine-tuned adjustments in relation to the rank (r or 2r)
+- **LoRa Dropout** applies regularisation, by default sero, set 0.1 to add regularization  if model overfitts
+- **Weight Decay** A regularization term that penalizes large weights to prevent overfitting and improve generalization. (0.01 (recommended) - 0.1)
+- **Target modules** Specify which parts of the model you want to apply LoRA adapters to — either the attention `q_proj, k_proj, v_proj, o_proj`, the MLP `gate_proj, up_proj, down_proj`, or both.(recommended to target all)
 
 ## Overfitting
 *Wie hast Du Overfitting erkannt bzw. verhindert? (Bei wenigen hundert Beispielen sehr real.)*
